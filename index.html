@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brune — кофейня с обжаркой и авторскими напитками</title>
+<meta name="description" content="Brune: свежеобжаренный кофе, авторские напитки, холодный кофе и десерты. Выберите напиток и соберите заказ онлайн.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="beans" aria-hidden="true">
+  <img src="assets/images/beans/bean1.png" alt="" style="left:4%;top:8%;width:70px;--d:19s;--dl:0s;--dx:18px;--dy:-26px;--r:25deg;opacity:0.55">
+  <img src="assets/images/beans/bean2.png" alt="" style="left:12%;top:40%;width:110px;--d:26s;--dl:-6s;--dx:-22px;--dy:30px;--r:-40deg;opacity:0.35;filter:blur(2px)">
+  <img src="assets/images/beans/bean3.png" alt="" style="left:7%;top:74%;width:80px;--d:22s;--dl:-11s;--dx:26px;--dy:-20px;--r:35deg;opacity:0.5">
+  <img src="assets/images/beans/bean3.png" alt="" style="left:24%;top:22%;width:55px;--d:17s;--dl:-3s;--dx:-14px;--dy:22px;--r:-30deg;opacity:0.45">
+  <img src="assets/images/beans/bean1.png" alt="" style="left:30%;top:86%;width:120px;--d:28s;--dl:-14s;--dx:20px;--dy:-28px;--r:30deg;opacity:0.3;filter:blur(3px)">
+  <img src="assets/images/beans/bean2.png" alt="" style="left:44%;top:6%;width:60px;--d:21s;--dl:-8s;--dx:-24px;--dy:18px;--r:40deg;opacity:0.4;filter:blur(1px)">
+  <img src="assets/images/beans/bean1.png" alt="" style="left:52%;top:60%;width:45px;--d:16s;--dl:-2s;--dx:16px;--dy:-24px;--r:-35deg;opacity:0.5">
+  <img src="assets/images/beans/bean3.png" alt="" style="left:60%;top:92%;width:90px;--d:24s;--dl:-9s;--dx:-18px;--dy:-22px;--r:28deg;opacity:0.4;filter:blur(1px)">
+  <img src="assets/images/beans/bean1.png" alt="" style="left:70%;top:18%;width:100px;--d:27s;--dl:-17s;--dx:22px;--dy:26px;--r:-32deg;opacity:0.3;filter:blur(3px)">
+  <img src="assets/images/beans/bean2.png" alt="" style="left:78%;top:48%;width:60px;--d:20s;--dl:-5s;--dx:-20px;--dy:-18px;--r:38deg;opacity:0.5">
+  <img src="assets/images/beans/bean2.png" alt="" style="left:86%;top:80%;width:115px;--d:29s;--dl:-12s;--dx:-26px;--dy:24px;--r:-30deg;opacity:0.32;filter:blur(2px)">
+  <img src="assets/images/beans/bean3.png" alt="" style="left:92%;top:12%;width:65px;--d:18s;--dl:-7s;--dx:14px;--dy:28px;--r:-36deg;opacity:0.5">
+  <img src="assets/images/beans/bean1.png" alt="" style="left:94%;top:58%;width:50px;--d:15s;--dl:-1s;--dx:-14px;--dy:-22px;--r:32deg;opacity:0.45">
+  <img src="assets/images/beans/bean2.png" alt="" style="left:38%;top:48%;width:75px;--d:23s;--dl:-10s;--dx:22px;--dy:20px;--r:-28deg;opacity:0.35;filter:blur(1px)">
+</div>
+<header class="header" id="top">
+  <a class="logo" href="#top" aria-label="Brune — на главную">BRUN<span>E</span></a>
+  <nav class="nav" id="nav" aria-label="Основная навигация">
+    <a href="#top">Главная</a><a href="#menu">Меню</a><a href="#about">О кофейне</a><a href="#reviews">Отзывы</a>
+  </nav>
+  <div class="header__actions">
+    <button class="icon-btn" id="cartBtn" aria-label="Открыть корзину"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg><span class="badge" id="cartCount">0</span></button>
+    <a class="btn btn--sm" href="#menu">Заказать</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero__text">
+    <h1>Кофе, который хочется растянуть на весь день</h1>
+    <p>Brune обжаривает зёрна малыми партиями и готовит каждый напиток на заказ. Заходите за классикой или за нашим рафом с лавандой.</p>
+    <a class="btn" href="#menu">Выбрать кофе</a>
+  </div>
+  <img class="hero__img" src="assets/images/hero.svg" alt="Два стаканчика кофе и брызги карамельного напитка" width="560" height="620">
+</section>
+
+<section class="section" id="menu">
+  <h2>Меню</h2>
+  <div class="tabs" role="tablist" id="tabs" aria-label="Категории меню"></div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</section>
+
+<section class="section about" id="about">
+  <h2>Brune — это</h2>
+  <div class="about__grid">
+    <article><b>1</b><h3>Высокое качество зёрен</h3><p>Берём зёрна у небольших ферм и обжариваем сами. Каждую партию пробуем перед тем, как она попадёт в чашку.</p></article>
+    <article><b>2</b><h3>Атмосфера вдохновения и уюта</h3><p>Тёплый свет, тихая музыка и столик у окна. Здесь удобно работать, встречаться или просто молчать с чашкой в руках.</p></article>
+    <img src="assets/images/about-cup.svg" alt="Фирменный стаканчик Brune" width="200" height="260" loading="lazy">
+    <article><b>3</b><h3>Индивидуальный подход</h3><p>Расскажите, что любите, и бариста подберёт крепость, молоко и сладость под ваш вкус.</p></article>
+    <article><b>4</b><h3>Команда бариста</h3><p>Наши бариста проходят обучение по экстракции и работе с молоком и знают, как подать каждый напиток.</p></article>
+  </div>
+  <a class="btn" href="#menu">Заказать</a>
+</section>
+
+<section class="section">
+  <h2 id="reviewsTitle">Что говорят гости</h2>
+  <p class="note" id="reviews">Демонстрационные отзывы: примеры типичных впечатлений гостей, не реальные цитаты.</p>
+  <div class="reviews" id="reviewList"></div>
+</section>
+
+<section class="promo">
+  <div><h2>Найди свой идеальный вкус</h2><p>Ответьте на три вопроса, и мы предложим напиток из меню.</p><button class="btn btn--ghost" id="quizBtn">Подобрать кофе</button></div>
+  <img src="assets/images/spoon.svg" alt="" width="320" height="200" loading="lazy">
+</section>
+</main>
+
+<footer class="studio">
+  <h2>Заказать сайт</h2>
+  <p>Нужен такой же сайт для вашего бизнеса? Напишите мне, обсудим задачу и сроки.</p>
+  <div class="studio__btns">
+    <a class="btn btn--social" href="https://t.me/deyz888" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21.5 3.3 2.7 10.6c-.9.4-.9 1.1-.2 1.3l4.8 1.5 1.9 5.7c.2.6.4.8.8.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3-14.4c.3-1.2-.4-1.8-1.1-1.4ZM8.5 13.2l9.4-5.9c.4-.3.8-.1.5.2l-7.8 7-.3 3.1Z"/></svg>Написать в Telegram</a>
+    <a class="btn btn--social" href="https://www.tiktok.com/@dest_dest6" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16.6 2h-3.2v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6.1V8.6a7.5 7.5 0 0 0 4.4 1.4V6.8a4.4 4.4 0 0 1-4.4-4.8Z"/></svg>Мой TikTok</a>
+  </div>
+  <small>© 2026 Brune. Демонстрационный сайт: заказы никуда не отправляются.</small>
+</footer>
+
+<!-- Корзина -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Корзина" aria-hidden="true">
+  <div class="drawer__head"><h2>Корзина</h2><button class="icon-btn" data-close aria-label="Закрыть">✕</button></div>
+  <ul class="cart" id="cartList"></ul>
+  <div class="drawer__foot"><div class="total"><span>Итого</span><b id="cartTotal">0 ₽</b></div><button class="btn" id="checkoutBtn">Оформить заказ</button></div>
+</aside>
+
+<!-- Модальные окна -->
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="coTitle" hidden>
+  <div class="modal__box">
+    <button class="icon-btn modal__x" data-close aria-label="Закрыть">✕</button>
+    <form id="orderForm" novalidate>
+      <h2 id="coTitle">Оформление заказа</h2>
+      <p class="note">Демонстрационное оформление: оплата и отправка на сервер не подключены.</p>
+      <label>Имя<input name="name" required autocomplete="name"></label>
+      <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="+7 900 000-00-00"></label>
+      <label>Комментарий<textarea name="comment" rows="3"></textarea></label>
+      <p class="error" id="formError" role="alert"></p>
+      <button class="btn" type="submit">Подтвердить заказ</button>
+    </form>
+    <div id="orderDone" hidden>
+      <h2>Заказ собран ✓</h2>
+      <p class="note">Это демо: заказ не отправлен. Текст заказа можно скопировать:</p>
+      <textarea id="orderText" rows="9" readonly></textarea>
+      <button class="btn" id="copyOrder">Скопировать текст</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="quizTitle" hidden>
+  <div class="modal__box"><button class="icon-btn modal__x" data-close aria-label="Закрыть">✕</button><div id="quizBody"></div></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
